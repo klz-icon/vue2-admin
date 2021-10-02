@@ -1,0 +1,32 @@
+
+// 当子路由为1时就是用el-menu-item
+// 样式
+.el-menu-item {
+    font-size: 14px;
+    &.is-active { 
+        background-color: #c6c6c6 !important; 
+        border-right: 2px solid #409EFF !important;
+    }
+    border-bottom: 0.2px solid #ccc !important;
+    // border-top: 0.2px solid #ccc !important;
+}
+
+// 子路由大于1时
+// 修改一级菜单样式,可以不要
+// li.el-submenu {
+//     &.is-active.is-opened .el-submenu__title { background-color: hotpink !important; }
+// }
+// 子菜单的样式
+.el-submenu .el-menu-item {
+    font-size: 14px;
+    padding-left: 50px !important;
+    // &.is-active { background-color: rgba(245, 108, 108, 0.2) !important; }
+    &.is-active { 
+        background-color: #c6c6c6 !important; 
+        border-right: 2px solid #409EFF !important;
+    }
+}
+
+.el-submenu {
+    border-bottom: 0.5px solid #ccc !important;
+}
